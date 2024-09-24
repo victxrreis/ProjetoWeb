@@ -42,8 +42,7 @@ namespace PrintersApi.Migrations
                     Tipo = table.Column<string>(type: "longtext", nullable: true),
                     Cor = table.Column<string>(type: "longtext", nullable: true),
                     SelbValue = table.Column<string>(type: "longtext", nullable: false),
-                    QuantidadeDeTonner = table.Column<int>(type: "int", nullable: false),
-                    Status = table.Column<string>(type: "longtext", nullable: false)
+                    QuantidadeDeTonner = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

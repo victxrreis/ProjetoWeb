@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace PrintersApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240924014601_InitialCreate")]
+    [Migration("20240924021334_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -88,10 +88,6 @@ namespace PrintersApi.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("SelbValue")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("longtext");
 
