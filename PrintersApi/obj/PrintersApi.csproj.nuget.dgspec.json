@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {}
+    "C:\\Faculdade\\Semestre3\\WebAvancado\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {}
   },
   "projects": {
-    "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {
+    "C:\\Faculdade\\Semestre3\\WebAvancado\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+        "projectUniqueName": "C:\\Faculdade\\Semestre3\\WebAvancado\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
         "projectName": "PrintersApi",
-        "projectPath": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+        "projectPath": "C:\\Faculdade\\Semestre3\\WebAvancado\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\obj\\",
+        "outputPath": "C:\\Faculdade\\Semestre3\\WebAvancado\\ProjetoWeb\\PrintersApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config"

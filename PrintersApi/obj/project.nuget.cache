@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QLYvwJrzrKo=",
+  "dgSpecHash": "4kzcrQuPECw=",
   "success": true,
-  "projectFilePath": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+  "projectFilePath": "C:\\Faculdade\\Semestre3\\WebAvancado\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rafae\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

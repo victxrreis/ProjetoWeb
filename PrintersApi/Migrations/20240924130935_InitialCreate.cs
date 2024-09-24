@@ -56,8 +56,8 @@ namespace PrintersApi.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    PrinterId = table.Column<int>(type: "int", nullable: false),
-                    TonnerId = table.Column<int>(type: "int", nullable: false),
+                    PrinterId = table.Column<int>(type: "int", nullable: true),
+                    TonnerId = table.Column<int>(type: "int", nullable: true),
                     SelbValue = table.Column<string>(type: "longtext", nullable: false)
                 },
                 constraints: table =>
@@ -67,14 +67,12 @@ namespace PrintersApi.Migrations
                         name: "FK_Selbs_Printers_PrinterId",
                         column: x => x.PrinterId,
                         principalTable: "Printers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Selbs_Tonners_TonnerId",
                         column: x => x.TonnerId,
                         principalTable: "Tonners",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 })
                 .Annotation("MySQL:Charset", "utf8mb4");
 

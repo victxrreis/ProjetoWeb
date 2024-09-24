@@ -6,6 +6,10 @@ public class Selb {
     //precisa ter elas, e tipo um codigo da empresa que a gente pega as impressoras
     //entao coloquei esse atributo ai, serve quase como um id
 
+    public Selb() {
+
+    }
+
     public Selb(int id, int printerId, int tonnerId, string selbValue) {
         Id = id;
         SelbValue = selbValue;

@@ -30,7 +30,7 @@ public class Tonner
 
     private string ObterStatus()
     {
-        if (QuantidadeDeTonner < 0)
+        if (QuantidadeDeTonner <= 0)
         {
             return "Sem nada";
         }
