@@ -6,7 +6,7 @@ using MySql.EntityFrameworkCore.Metadata;
 namespace PrintersApi.Migrations
 {
     /// <inheritdoc />
-    public partial class Migration01 : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -23,8 +23,8 @@ namespace PrintersApi.Migrations
                     Ip = table.Column<string>(type: "longtext", nullable: true),
                     Local = table.Column<string>(type: "longtext", nullable: true),
                     Setor = table.Column<string>(type: "longtext", nullable: true),
-                    Senha = table.Column<string>(type: "longtext", nullable: true),
-                    Nome = table.Column<string>(type: "longtext", nullable: true)
+                    Nome = table.Column<string>(type: "longtext", nullable: true),
+                    SelbValue = table.Column<string>(type: "longtext", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -40,7 +40,10 @@ namespace PrintersApi.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Printer = table.Column<string>(type: "longtext", nullable: true),
                     Tipo = table.Column<string>(type: "longtext", nullable: true),
-                    Cor = table.Column<string>(type: "longtext", nullable: true)
+                    Cor = table.Column<string>(type: "longtext", nullable: true),
+                    SelbValue = table.Column<string>(type: "longtext", nullable: false),
+                    QuantidadeDeTonner = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<string>(type: "longtext", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -55,7 +58,8 @@ namespace PrintersApi.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     PrinterId = table.Column<int>(type: "int", nullable: false),
-                    TonnerId = table.Column<int>(type: "int", nullable: false)
+                    TonnerId = table.Column<int>(type: "int", nullable: false),
+                    SelbValue = table.Column<string>(type: "longtext", nullable: false)
                 },
                 constraints: table =>
                 {

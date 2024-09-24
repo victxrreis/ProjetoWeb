@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {}
+    "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {}
   },
   "projects": {
-    "C:\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {
+    "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+        "projectUniqueName": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
         "projectName": "PrintersApi",
-        "projectPath": "C:\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetoWeb\\PrintersApi\\obj\\",
+        "projectPath": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+        "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
+        "outputPath": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWebAv\\ProjetoWeb\\PrintersApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

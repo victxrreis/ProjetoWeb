@@ -28,6 +28,9 @@ public static class TonnerEndpoints
             tonner.Printer = tonnerAtualizado.Printer;
             tonner.Tipo = tonnerAtualizado.Tipo;
             tonner.Cor = tonnerAtualizado.Cor;
+            tonner.SelbValue = tonnerAtualizado.SelbValue;
+            tonner.Status = tonnerAtualizado.Status;
+            tonner.QuantidadeDeTonner = tonnerAtualizado.QuantidadeDeTonner;
 
             await dbContext.SaveChangesAsync();
             return Results.NoContent();

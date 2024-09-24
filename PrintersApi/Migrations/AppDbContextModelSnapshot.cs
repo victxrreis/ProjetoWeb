@@ -32,7 +32,8 @@ namespace PrintersApi.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Senha")
+                    b.Property<string>("SelbValue")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Setor")
@@ -51,6 +52,10 @@ namespace PrintersApi.Migrations
 
                     b.Property<int>("PrinterId")
                         .HasColumnType("int");
+
+                    b.Property<string>("SelbValue")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<int>("TonnerId")
                         .HasColumnType("int");
@@ -76,6 +81,17 @@ namespace PrintersApi.Migrations
                     b.Property<string>("Printer")
                         .HasColumnType("longtext");
 
+                    b.Property<int>("QuantidadeDeTonner")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SelbValue")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Tipo")
                         .HasColumnType("longtext");
 
@@ -87,13 +103,13 @@ namespace PrintersApi.Migrations
             modelBuilder.Entity("Selb", b =>
                 {
                     b.HasOne("Printer", "Printer")
-                        .WithMany("Selbs")
+                        .WithMany()
                         .HasForeignKey("PrinterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Tonner", "Tonner")
-                        .WithMany("Selbs")
+                        .WithMany()
                         .HasForeignKey("TonnerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -101,16 +117,6 @@ namespace PrintersApi.Migrations
                     b.Navigation("Printer");
 
                     b.Navigation("Tonner");
-                });
-
-            modelBuilder.Entity("Printer", b =>
-                {
-                    b.Navigation("Selbs");
-                });
-
-            modelBuilder.Entity("Tonner", b =>
-                {
-                    b.Navigation("Selbs");
                 });
 #pragma warning restore 612, 618
         }

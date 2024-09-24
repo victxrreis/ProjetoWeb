@@ -28,8 +28,8 @@ public static class PrinterEndpoints
             printer.Ip = printerAtualizada.Ip;
             printer.Local = printerAtualizada.Local;
             printer.Setor = printerAtualizada.Setor;
-            printer.Senha = printerAtualizada.Senha;
             printer.Nome = printerAtualizada.Nome;
+            printer.SelbValue = printerAtualizada.SelbValue;
 
             await dbContext.SaveChangesAsync();
             return Results.NoContent();
