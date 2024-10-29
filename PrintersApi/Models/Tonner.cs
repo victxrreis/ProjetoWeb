@@ -1,46 +1,52 @@
 public class Tonner
 {
     public int Id { get; set; }
-    public string? Printer { get; set; }
-    public string? Tipo { get; set; }
-    public string? Cor { get; set; }
-    public string SelbValue { get; set; } = string.Empty;
-    private int quantidadeDeTonner;
-    
-    public int QuantidadeDeTonner
-    {
-        get => quantidadeDeTonner;
-        set
-        {
-            quantidadeDeTonner = value;
-        }
-    }
+    public string SelbValue { get; set; }
+    public string Color { get; set; }
+    public int Quantity { get; private set; }
 
-    public string Status => ObterStatus();
-
-    public Tonner(int id, string? printer, string? tipo, string? cor, string selbValue, int quantidadeDeTonner)
+    public Tonner(string selbValue, string color, int quantity)
     {
-        Id = id;
-        Printer = printer;
-        Tipo = tipo;
-        Cor = cor;
         SelbValue = selbValue;
-        QuantidadeDeTonner = quantidadeDeTonner;
+        Color = color;
+        Quantity = quantity;
     }
 
-    private string ObterStatus()
+    public string Status
     {
-        if (QuantidadeDeTonner <= 0)
+        get
         {
-            return "Sem nada";
+            if (Quantity == 0)
+            {
+                return "Sem tonner no estoque";
+            }
+            else if (Quantity == 1)
+            {
+                return "Somente 1 em estoque";
+            }
+            else
+            {
+                return "Disponível";
+            }
         }
-        else if (QuantidadeDeTonner == 1)
+    }
+
+    public void AddTonners(int amount)
+    {
+        if (amount <= 0)
         {
-            return "Alerta";
+            throw new ArgumentException("A quantidade a adicionar deve ser maior que zero.");
         }
-        else
+        Quantity += amount;
+    }
+
+    public bool RemoveTonner()
+    {
+        if (Quantity > 0)
         {
-            return "Disponível";
+            Quantity--;
+            return true;
         }
+        return false;
     }
 }

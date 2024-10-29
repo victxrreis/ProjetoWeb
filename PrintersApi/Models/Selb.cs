@@ -1,17 +1,29 @@
-public class Selb {
+public class Selb
+{
     public int Id { get; set; }
-    public Printer? Printer { get; set; }
-    public Tonner? Tonner { get; set; }
-    public string SelbValue { get; set; } //adicionei porque as Selbs sao string
-    //precisa ter elas, e tipo um codigo da empresa que a gente pega as impressoras
-    //entao coloquei esse atributo ai, serve quase como um id
+    public string SelbValue { get; set; }
+    public Printer Printer { get; set; }
+    public Tonner Tonner { get; set; }
 
-    public Selb() {
+    public List<Loan> Loans { get; set; }
+    public List<Ticket> Tickets { get; set; }
 
+    public Selb(int id, string selbValue, Printer printer, Tonner tonner)
+    {
+        SelbValue = selbValue;
+        Printer = printer;
+        Tonner = tonner;
+        Loans = new List<Loan>();
+        Tickets = new List<Ticket>();
     }
 
-    public Selb(int id, int printerId, int tonnerId, string selbValue) {
-        Id = id;
-        SelbValue = selbValue;
-    }    
+    public void AddLoan(Loan loan)
+    {
+        Loans.Add(loan);
+    }
+
+    public void AddTicket(Ticket ticket)
+    {
+        Tickets.Add(ticket);
+    }
 }
