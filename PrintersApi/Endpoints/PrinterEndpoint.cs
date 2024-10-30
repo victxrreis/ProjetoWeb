@@ -26,10 +26,10 @@ public static class PrinterEndpoints
             if (printer is null) return Results.NotFound();
 
             printer.Ip = printerAtualizada.Ip;
+            printer.Model = printerAtualizada.Model;
             printer.Local = printerAtualizada.Local;
-            printer.Setor = printerAtualizada.Setor;
-            printer.Nome = printerAtualizada.Nome;
-            printer.SelbValue = printerAtualizada.SelbValue;
+            printer.Department = printerAtualizada.Department;
+            printer.Name = printerAtualizada.Name;
 
             await dbContext.SaveChangesAsync();
             return Results.NoContent();

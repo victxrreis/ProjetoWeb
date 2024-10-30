@@ -12,9 +12,9 @@ builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =
     options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles
 );
 
-//coloquei pra puxar a conexao pela string de conexao
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("A string de conexão não pode ser nula."))
+    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection") 
+    ?? throw new InvalidOperationException("A string de conexão não pode ser nula."))
 );
 
 
@@ -23,7 +23,10 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
+app.MapLoanEndpoints();
 app.MapPrinterEndpoints();
+app.MapSelbEndpoints();
+app.MapTicketEndpoints();
 app.MapTonnerEndpoints();
 
 app.Run();
