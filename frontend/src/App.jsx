@@ -1,17 +1,19 @@
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
-import CardSelb from "./cards/CardSelb";
+import Cards from "./cards/Cards";
 
 import './css/Footer.css';
 import './css/Header.css';
-import './css/CardSelb.css';
+import './cards/css/CardSelb.css';
+import './cards/css/CardLoans.css';
 import './css/Main.css';
+import './cards/css/Cards.css';
 
 function App() {
   return (
     <>
     <Header/>
-    <CardSelb/>
+    <Cards/>
     <Footer/>
     </>
   );

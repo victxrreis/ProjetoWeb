@@ -1,19 +1,18 @@
-import printerIcon from '../img/printerIcon.png';
+import loansIcon from '../img/loansIcon.png';
 
-function CardSelb() {
+function CardLoans() {
     return (
         <>
             <nav class="cardMenu">
 	            <section class="card">
 
-                    <img className="cardMainIcon" src={printerIcon} alt="Icone Impressora" />
+                    <img className="cardMainIcon" src={loansIcon} alt="Icone Emprestimos" />
 
 		            <section class="cardInformation">
                         <p class="cardTitle">IMP-0000</p>
                         <p class="cardTitle">Selb</p>
                     </section>
 
-                    
                     <button class="selectCardButton">Selecionar</button>
 	            </section>
             </nav>
@@ -21,4 +20,4 @@ function CardSelb() {
     );
 }
 
-export default CardSelb;
+export default CardLoans;
