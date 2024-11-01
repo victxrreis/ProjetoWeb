@@ -1,0 +1,86 @@
+header {
+    background-color: #82E0AA;
+    /*padding: 10px 400px;*/
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    /*border: 2px solid #58D68D;*/
+    font-family: 'League Spartan';
+    box-shadow: 
+    rgba(171, 235, 198) 0px 15px 30px -12px inset, 
+    rgba(20, 143, 119) 0px 18px 13px -18px inset;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex; 
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search {
+  width: 250px;
+  background-color: #f5f5f5;
+  color: #242424;
+  padding: 15px 40px 15px 40px;
+  min-height: 40px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 
+      20px 20px 60px #bebebe,
+      -20px -20px 60px #82E0AA;
+  font-family: 'League Spartan';
+  margin-right: 40px;
+
+  background-image: url('C:\Programas\ReactFrontPrinters\frontend\src\img\lupaicon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+}
+
+
+.search:focus {
+  border-color: #D5F5E3;
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.25);
+  background: #D5F5E3;
+
+  background-image: url('C:\Programas\ReactFrontPrinters\frontend\src\img\lupaicon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+}
+
+.search:hover {
+  border-color: #D5F5E3;
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.25);
+  background: #D5F5E3;
+  
+  background-image: url('C:\Programas\ReactFrontPrinters\frontend\src\img\lupaicon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+}

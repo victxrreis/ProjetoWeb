@@ -1,0 +1,80 @@
+#selbCardMenu {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+}
+
+.selbCardMenu {
+    display: flex;
+    justify-content: left;
+    gap: 100px;
+    padding: 20px;
+}
+
+.selbCard {
+    width: 150px;
+    height: 350px;
+/*  border-radius: 5px;*/
+    background: #82E0AA;
+    position: relative;
+    padding: 1.8rem;
+    /*border: 2px solid #58D68D;*/
+    transition: 0.5s ease-out;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'League Spartan';
+    
+    box-shadow: 
+    rgba(171, 235, 198) 0px 15px 30px -12px inset, 
+    rgba(20, 143, 119) 0px 18px 13px -18px inset;
+}
+
+.selbInformation {
+    text-align: center;
+}
+
+.printerIcon {
+    width: 50px; /* Tamanho do icone */
+    height: auto;
+    display: block;
+    margin: 0 auto 250px; /* Espaço na parte de baixo */
+}
+
+.cardTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.selectSelbButton {
+    transform: translate(-50%, 125%);
+    width: 60%;
+/*  border-radius: 5px;*/
+    border: none;
+    background-color: #239B56;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    font-family: 'League Spartan';
+}
+
+.selbCard:hover {
+    border-color: #239B56;
+    box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.25);
+    background: #2ECC71;
+
+}
+
+.selbCard:hover .selectSelbButton {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
