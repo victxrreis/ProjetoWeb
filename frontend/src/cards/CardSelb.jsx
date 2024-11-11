@@ -1,4 +1,5 @@
 import printerIcon from '../img/printerIcon.png';
+import CardSpecs from './CardSpecs';
 
 function CardSelb() {
     return (
@@ -14,7 +15,7 @@ function CardSelb() {
                     </section>
 
                     
-                    <button class="selectCardButton">Selecionar</button>
+                    <button class="selectCardButton" onClick={() => { CardSpecs(); }}>Selecionar</button>
 	            </section>
             </nav>
         </>

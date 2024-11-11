@@ -1,0 +1,62 @@
+.container {
+    position: relative;
+}
+
+.iconeImpressora {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translate(7%, 20%);
+}
+
+.square {
+    width: 500px;
+    height: 500px;
+    background-color: #82E0AA;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    font-family: 'League Spartan';
+  }
+
+.title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 26px;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.title, .subtitle {
+    margin-left: 20px;
+}
+
+.colorContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    gap: 20px;
+}
+
+.color {
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.notificacaoContainer {
+    position: absolute;
+    left: calc(50% + 320px);
+    top: 50%;
+    transform: translateY(141%); 
+    width: 200px;
+    font-family: 'League Spartan';
+}
