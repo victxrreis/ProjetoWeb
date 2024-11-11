@@ -1,6 +1,6 @@
 import printerIcon from '../img/printerIcon.png';
 
-function CardSpecs() {
+function CardSpecPrinter() {
     return (
         <div className="container">
             
@@ -36,4 +36,4 @@ function CardSpecs() {
     );
 }
 
-export default CardSpecs;
+export default CardSpecPrinter;
