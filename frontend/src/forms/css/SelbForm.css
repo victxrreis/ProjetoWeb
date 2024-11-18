@@ -1,0 +1,85 @@
+.selbForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #82E0AA;
+    padding: 50px;
+    box-shadow: 
+      rgba(171, 235, 198) 0px 15px 30px -12px inset, 
+      rgba(20, 143, 119) 0px 18px 13px -18px inset;
+    z-index: 1000;
+    width: 600px;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .FormTitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formSections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .leftColumn, .rightColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .textForm {
+    margin-bottom: 20px;
+  }
+  
+  .textForm label {
+    display: block;
+    margin-bottom: 3px;
+  }
+  
+  .textForm input {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: 1px solid #ccc;
+  }
+  
+  .selbFormButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .saveButtonForm,
+  .cancelButtonForm {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .saveButtonForm {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .cancelButtonForm {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .saveButtonForm:hover,
+  .cancelButtonForm:hover {
+    opacity: 0.8;
+  }
+  

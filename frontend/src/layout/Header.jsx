@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../img/logo_itambe.png';
 
 function Header() {
@@ -8,13 +10,13 @@ function Header() {
             </figure>
             <nav className="menu">
                 <ul>
-                    <li><a href="#home"><n>HOME</n></a></li>
-                    <li><a href="#selb"><n>SELBS</n></a></li>
-                    <li><a href="#emprestimos"><n>EMPRÉSTIMOS</n></a></li>
-                    <li><a href="#pedidos"><n>PEDIDOS</n></a></li>
+                    <li><Link to="/"><n>HOME</n></Link></li>
+                    <li><Link to="/selbs"><n>SELBS</n></Link></li>
+                    <li><Link to="/emprestimos"><n>EMPRÉSTIMOS</n></Link></li>
+                    <li><Link to="/pedidos"><n>PEDIDOS</n></Link></li>
                 </ul>
             </nav>
-            <input class="search" name="text" placeholder="Procurar..." type="search"></input>
+            <input className="search" name="text" placeholder="Procurar..." type="search"></input>
         </header>
     );
 }

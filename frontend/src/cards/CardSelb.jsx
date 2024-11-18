@@ -13,7 +13,6 @@ function CardSelb() {
                         <p class="cardTitle">Selb</p>
                     </section>
 
-                    
                     <button class="selectCardButton">Selecionar</button>
 	            </section>
             </nav>

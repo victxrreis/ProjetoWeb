@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {}
+    "C:\\Programas\\FrontGit\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {}
   },
   "projects": {
-    "C:\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {
+    "C:\\Programas\\FrontGit\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+        "projectUniqueName": "C:\\Programas\\FrontGit\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
         "projectName": "PrintersApi",
-        "projectPath": "C:\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetoWeb\\PrintersApi\\obj\\",
+        "projectPath": "C:\\Programas\\FrontGit\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+        "packagesPath": "C:\\Users\\rafael.leal\\.nuget\\packages\\",
+        "outputPath": "C:\\Programas\\FrontGit\\ProjetoWeb\\PrintersApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rafael.leal\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
