@@ -15,8 +15,8 @@ function CardLoans() {
         <img className="cardMainIcon" src={loansIcon} alt="Icone Emprestimos" />
 
         <section className="cardInformation">
-          <p className="cardTitle">IMP-0000</p>
-          <p className="cardTitle">Selb</p>
+          <p className="cardTitle">Selb 1</p>
+          <p className="cardTitle">Selb 2</p>
         </section>
 
         <button className="selectCardButton" onClick={handleCardSelect}>Selecionar</button>

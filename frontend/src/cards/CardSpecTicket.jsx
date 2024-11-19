@@ -1,10 +1,10 @@
 import React from 'react';
-import printerIcon from '../img/printerIcon.png';
+import ticketsIcon from '../img/ticketsIcon.png';
 
 function CardSpecsTickets() {
   return (
     <div className="container">
-      <img className="iconeImpressora" src={printerIcon} alt="Ícone Impressora" />
+      <img className="iconePedidos" src={ticketsIcon} alt="Icone Pedidos" />
 
       <div className="square">
         <h1 className="title">Pedido</h1>

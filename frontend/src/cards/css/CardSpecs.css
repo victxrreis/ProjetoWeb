@@ -9,6 +9,20 @@
     transform: translate(7%, 20%);
 }
 
+.iconeEmprestimo {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translate(7%, 20%);
+}
+
+.iconePedidos {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translate(7%, 20%);
+}
+
 .square {
     width: 500px;
     height: 500px;

@@ -20,6 +20,9 @@ footer {
     box-shadow: 
     rgba(171, 235, 198) 0px 15px 30px -12px inset, 
     rgba(20, 143, 119) 0px 18px 13px -18px inset;
+
+    text-decoration: none;
+    color: black;
 }
 
 .addSelbButton:hover {

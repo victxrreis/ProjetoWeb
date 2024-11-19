@@ -15,8 +15,8 @@ function CardTickets() {
         <section className="card">
           <img className="cardMainIcon" src={ticketsIcon} alt="Icone Pedidos" />
           <section className="cardInformation">
-            <p className="cardTitle">IMP-0000</p>
             <p className="cardTitle">Selb</p>
+            <p className="cardTitle">Tipo</p>
           </section>
           <button className="selectCardButton" onClick={handleCardSelect}>Selecionar</button>
         </section>
