@@ -25,9 +25,10 @@ public static class TonnerEndpoints
             var tonner = await dbContext.Tonners.FindAsync(id);
             if (tonner is null) return Results.NotFound();
 
-            tonner.Id = tonnerAtualizado.Id;
             tonner.SelbValue = tonnerAtualizado.SelbValue;
             tonner.Color = tonnerAtualizado.Color;
+            tonner.Quantity = tonnerAtualizado.Quantity;
+            tonner.Model = tonnerAtualizado.Model;
 
             await dbContext.SaveChangesAsync();
             return Results.NoContent();

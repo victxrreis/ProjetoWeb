@@ -3,7 +3,7 @@ public class Tonner
     public int Id { get; set; }
     public string SelbValue { get; set; }
     public string Color { get; set; }
-    public int Quantity { get; private set; }
+    public int Quantity { get; set; }
     public string Model { get; set; }
 
     public Tonner(string selbValue, string color, int quantity, string model)

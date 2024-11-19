@@ -1,9 +1,9 @@
 public class Selb
 {
     public int Id { get; set; }
-    public string SelbValue { get; set; }
-    public Printer Printer { get; set; }
-    public Tonner Tonner { get; set; }
+    public string? SelbValue { get; set; }
+    public Printer? Printer { get; set; }
+    public Tonner? Tonner { get; set; }
 
     public List<Loan> Loans { get; set; }
     public List<Ticket> Tickets { get; set; }
