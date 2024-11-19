@@ -1,21 +1,14 @@
-import React, { useState } from "react";
-import SelbForm from "../forms/SelbForm";
+import React from "react";
+import { Link } from "react-router-dom";  // Importando Link do react-router-dom
 
 function Footer() {
-    const [showForm, setShowForm] = useState(false);
-
-    const handleClick = () => {
-        setShowForm(!showForm);
-    };
-
-    return (
-        <footer>
-            <button className="addSelbButton" onClick={handleClick}>
-                + Adicionar Selb
-            </button>
-            {showForm && <SelbForm />}
-        </footer>
-    );
+  return (
+    <footer>
+      <Link to="/forms" className="addSelbButton">
+        + Adicionar Selb
+      </Link>
+    </footer>
+  );
 }
 
 export default Footer;

@@ -4,12 +4,14 @@ public class Tonner
     public string SelbValue { get; set; }
     public string Color { get; set; }
     public int Quantity { get; private set; }
+    public string Model { get; set; }
 
-    public Tonner(string selbValue, string color, int quantity)
+    public Tonner(string selbValue, string color, int quantity, string model)
     {
         SelbValue = selbValue;
         Color = color;
         Quantity = quantity;
+        Model = model;
     }
 
     public string Status

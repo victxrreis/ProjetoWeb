@@ -1,23 +1,28 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import ticketsIcon from '../img/ticketsIcon.png';
 
 function CardTickets() {
-    return (
-        <>
-            <nav class="cardMenu">
-	            <section class="card">
+  const navigate = useNavigate();
 
-                    <img className="cardMainIcon" src={ticketsIcon} alt="Icone Pedidos" />
+  const handleCardSelect = () => {
+    navigate('/selbEspecTickets');
+  };
 
-		            <section class="cardInformation">
-                        <p class="cardTitle">IMP-0000</p>
-                        <p class="cardTitle">Selb</p>
-                    </section>
-
-                    <button class="selectCardButton">Selecionar</button>
-	            </section>
-            </nav>
-        </>
-    );
+  return (
+    <>
+      <nav className="cardMenu">
+        <section className="card">
+          <img className="cardMainIcon" src={ticketsIcon} alt="Icone Pedidos" />
+          <section className="cardInformation">
+            <p className="cardTitle">IMP-0000</p>
+            <p className="cardTitle">Selb</p>
+          </section>
+          <button className="selectCardButton" onClick={handleCardSelect}>Selecionar</button>
+        </section>
+      </nav>
+    </>
+  );
 }
 
 export default CardTickets;

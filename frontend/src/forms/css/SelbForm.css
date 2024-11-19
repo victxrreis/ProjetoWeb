@@ -15,50 +15,50 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .FormTitle {
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   .formSections {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  
+
   .leftColumn, .rightColumn {
     display: flex;
     flex-direction: column;
   }
-  
+
   h3 {
     text-align: center;
     margin-bottom: 15px;
     font-size: 18px;
   }
-  
+
   .textForm {
     margin-bottom: 20px;
   }
-  
+
   .textForm label {
     display: block;
     margin-bottom: 3px;
   }
-  
+
   .textForm input {
     width: 100%;
     padding: 6px;
     outline: none;
     border: 1px solid #ccc;
   }
-  
+
   .selbFormButtons {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .saveButtonForm,
   .cancelButtonForm {
     width: 48%;
@@ -67,19 +67,22 @@
     font-size: 16px;
     cursor: pointer;
   }
-  
+
   .saveButtonForm {
     background-color: #28a745;
     color: white;
   }
-  
+
   .cancelButtonForm {
     background-color: #dc3545;
     color: white;
   }
-  
+
   .saveButtonForm:hover,
   .cancelButtonForm:hover {
     opacity: 0.8;
   }
-  
+
+  fieldset {
+    border: none;
+  }

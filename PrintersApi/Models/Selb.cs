@@ -8,8 +8,15 @@ public class Selb
     public List<Loan> Loans { get; set; }
     public List<Ticket> Tickets { get; set; }
 
+    public Selb()
+    {
+        Loans = new List<Loan>();
+        Tickets = new List<Ticket>();
+    }
+
     public Selb(int id, string selbValue, Printer printer, Tonner tonner)
     {
+        Id = id;
         SelbValue = selbValue;
         Printer = printer;
         Tonner = tonner;
