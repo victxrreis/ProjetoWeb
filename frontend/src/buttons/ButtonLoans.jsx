@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ButtonLoans() {
   return (
-      <Link to="/AddSelbform" className="addSelbButton">
+      <Link to="/emprestimos" className="addSelbButton">
         Devoluções e Empréstimos
       </Link>
   );

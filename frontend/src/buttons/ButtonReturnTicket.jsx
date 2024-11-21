@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function ButtonReturnTicket() {
   return (
-      <Link to="/AddSelbform" className="addSelbButton">
-        Devolver Tonner
+      <Link to="/pedidos" className="addSelbButton">
+        Pedido Entregue
       </Link>
   );
 }

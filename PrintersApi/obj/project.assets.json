@@ -3961,19 +3961,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rafae\\.nuget\\packages\\": {}
+    "C:\\Users\\rafael.leal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+      "projectUniqueName": "C:\\Programas\\FrontGit\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
       "projectName": "PrintersApi",
-      "projectPath": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
-      "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Faculdade\\Semestre3\\DevDeSoftwareVisual\\ProjetoWeb\\PrintersApi\\obj\\",
+      "projectPath": "C:\\Programas\\FrontGit\\ProjetoWeb\\PrintersApi\\PrintersApi.csproj",
+      "packagesPath": "C:\\Users\\rafael.leal\\.nuget\\packages\\",
+      "outputPath": "C:\\Programas\\FrontGit\\ProjetoWeb\\PrintersApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\rafael.leal\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4040,7 +4040,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

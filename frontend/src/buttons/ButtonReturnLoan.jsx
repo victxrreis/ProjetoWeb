@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ButtonReturnLoans() {
   return (
-      <Link to="/AddSelbform" className="addSelbButton">
+      <Link to="/emprestimos" className="addSelbButton">
         Devolver Tonner
       </Link>
   );

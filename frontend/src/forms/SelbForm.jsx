@@ -13,7 +13,7 @@ function SelbForm() {
       <h2 className="FormTitle">Adicionar Selb</h2>
 
       <div className="textForm">
-        <label htmlFor="selbValue">Selb Value</label>
+        <label htmlFor="selbValue">Selb</label>
         <input id="selbValue" type="text" />
       </div>
 
@@ -28,11 +28,16 @@ function SelbForm() {
 
             <div className="textForm">
               <label htmlFor="local">Local</label>
-              <input id="local" type="text" />
+              <select id="local">
+                <option value="fabrica">Fábrica</option>
+                <option value="sede">Sede</option>
+                <option value="filiais">Filiais</option>
+              </select>
             </div>
 
+
             <div className="textForm">
-              <label htmlFor="department">Department</label>
+              <label htmlFor="department">Departamento</label>
               <input id="department" type="text" />
             </div>
           </fieldset>
@@ -42,12 +47,15 @@ function SelbForm() {
           <fieldset>
             <legend>Tonner</legend>
             <div className="textForm">
-              <label htmlFor="color">Color</label>
-              <input id="color" type="text" />
+              <label htmlFor="color">Cor</label>
+              <select id="color">
+                <option value="colorido">Colorido</option>
+                <option value="pretoebranco">Preto e Branco</option>
+              </select>
             </div>
-            
+
             <div className="textForm">
-              <label htmlFor="model">Model</label>
+              <label htmlFor="model">Modelo</label>
               <input id="model" type="text" />
             </div>
           </fieldset>

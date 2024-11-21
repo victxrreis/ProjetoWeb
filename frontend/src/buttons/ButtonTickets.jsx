@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ButtonTickets() {
   return (
-      <Link to="/AddSelbform" className="addSelbButton">
+      <Link to="/pedidos" className="addSelbButton">
         Suporte e Pedidos
       </Link>
   );
