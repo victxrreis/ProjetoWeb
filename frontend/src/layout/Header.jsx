@@ -10,10 +10,10 @@ function Header() {
             </figure>
             <nav className="menu">
                 <ul>
-                    <li><Link to="/"><n>HOME</n></Link></li>
-                    <li><Link to="/selbs"><n>SELBS</n></Link></li>
-                    <li><Link to="/emprestimos"><n>EMPRÉSTIMOS</n></Link></li>
-                    <li><Link to="/pedidos"><n>PEDIDOS</n></Link></li>
+                    <li><Link to="/"><span>HOME</span></Link></li>
+                    <li><Link to="/selbs"><span>SELBS</span></Link></li>
+                    <li><Link to="/emprestimos"><span>EMPRÉSTIMOS</span></Link></li>
+                    <li><Link to="/pedidos"><span>PEDIDOS</span></Link></li>
                 </ul>
             </nav>
             <input className="search" name="text" placeholder="Procurar..." type="search"></input>

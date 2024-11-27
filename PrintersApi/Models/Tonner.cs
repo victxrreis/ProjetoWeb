@@ -1,47 +1,36 @@
 public class Tonner
 {
     public int Id { get; set; }
-    public string SelbValue { get; set; }
     public string Color { get; set; }
     public int Quantity { get; private set; }
     public string Model { get; set; }
 
-    public Tonner(string selbValue, string color, int quantity, string model)
+    // Construtor
+    public Tonner(string color, int quantity, string model)
     {
-        SelbValue = selbValue;
         Color = color;
         Quantity = quantity;
         Model = model;
     }
 
+    // Propriedade de status simplificada
     public string Status
     {
         get
         {
-            if (Quantity == 0)
-            {
-                return "Sem tonner no estoque";
-            }
-            else if (Quantity == 1)
-            {
-                return "Somente 1 em estoque";
-            }
-            else
-            {
-                return "Disponível";
-            }
+            if (Quantity == 0) return "Sem tonner no estoque";
+            if (Quantity == 1) return "Somente 1 em estoque";
+            return "Disponível";
         }
     }
 
+    // Método para adicionar tonners
     public void AddTonners(int amount)
     {
-        if (amount <= 0)
-        {
-            throw new ArgumentException("A quantidade a adicionar deve ser maior que zero.");
-        }
         Quantity += amount;
     }
 
+    // Método para remover um tonner
     public bool RemoveTonner()
     {
         if (Quantity > 0)

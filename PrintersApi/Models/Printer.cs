@@ -6,6 +6,7 @@ public class Printer
     public string Department { get; set; }
     public string Name { get; set; }
 
+    // Construtor para inicialização
     public Printer(string ip, string local, string department, string name)
     {
         Ip = ip;

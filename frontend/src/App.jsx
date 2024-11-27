@@ -33,9 +33,9 @@ function App() {
           <Route path="/emprestimos" element={<CardLoans />} />
           <Route path="/pedidos" element={<CardTickets />} />
           <Route path="/AddSelbform" element={<SelbForm />} />
-          <Route path="/selbEspecPrinter" element={<CardSpecPrinter />} />
-          <Route path="/selbEspecLoans" element={<CardSpecsLoans />} />
-          <Route path="/selbEspecTickets" element={<CardSpecsTickets />} />
+          <Route path="/selbEspecPrinter/:id" element={<CardSpecPrinter />} />
+          <Route path="/selbEspecLoans/:id" element={<CardSpecsLoans />} />
+          <Route path="/selbEspecTickets/:id" element={<CardSpecsTickets />} />
           <Route path="/EditTonnerQtd" element={<CardEdit />} />
         </Routes>
       </main>

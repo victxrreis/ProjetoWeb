@@ -26,7 +26,6 @@ public static class PrinterEndpoints
             if (printer is null) return Results.NotFound();
 
             printer.Ip = printerAtualizada.Ip;
-            printer.Model = printerAtualizada.Model;
             printer.Local = printerAtualizada.Local;
             printer.Department = printerAtualizada.Department;
             printer.Name = printerAtualizada.Name;
